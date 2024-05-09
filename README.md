@@ -1,9 +1,11 @@
 Passo a passo para a utilização do site:
 
-1. Instale a pasta "JR-FRONT END";
+1. Tenha um navegador web instalado na sua máquina;
 
-2. Abra a pasta "HOME";
+2. Instale a pasta "JR-FRONT END";
 
-3. Execute o arquivo "index_inicial.html";
+3. Abra a pasta "HOME";
 
-4. Tudo pronto, basta navegar e usufruir do website personalizado.
+4. Execute o arquivo "index_inicial.html";
+
+5. Tudo pronto, basta navegar e usufruir do website personalizado.
