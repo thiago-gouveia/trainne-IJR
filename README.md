@@ -2,7 +2,7 @@ Passo a passo para a utilização do site:
 
 1. Tenha um navegador web instalado na sua máquina;
 
-2. Instale a pasta "JR-FRONT END";
+2. Na aba "code", instale a pasta "JR-FRONT END";
 
 3. Abra a pasta "HOME";
 
