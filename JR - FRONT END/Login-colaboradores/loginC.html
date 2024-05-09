@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="loginC.css">
+    <title>teste</title>
+</head>
+<html>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#" class="logo">Essence Dermatologia e Estética</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../Home/index_incial.html">Home</a></li>
+                <li class="nav-item"><a href="../botox/botox.html">Tratamentos</a></li>
+                <li class="nav-item"><a href="../Login/login.html">Login</a></li>
+                <li class="nav-item"><a href="../newsletter/newsletter.html">Newsletter</a></li>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div> 
+        </nav>
+    </header>
+    <main>
+        <div class="box-login">
+            <div class="titulos">
+                <div class="caixa1">
+                    <a href="../Login/login.html"><h6 class="clientes">CLIENTES</h6></a>
+                </div>
+                <div class="caixa2">
+                    <h6 class="colaboradores">COLABORADORES</h6>
+                </div>
+            </div>
+            <div class="entradas"> 
+                <h6 class="mini-logo">Essence Dermatologia e Estética</h6>
+                <div class="input">
+                    <div class="container">
+                        <div class="entryarea">
+                            <input type="text" required>
+                            <div class="labelline">Email ou Login</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="input">
+                    <div class="container">
+                        <div class="entryarea">
+                            <input type="text" required>
+                            <div class="labelline">Senha</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="../colaboradores/colaboradores.html" class="btn">ENTRAR</a>
+            </div>
+        </div>
+    </main>
+    <script>
+    const menu = document.querySelector('.menu');
+    const NavMenu = document.querySelector('.nav-menu');
+
+    menu.addEventListener('click', () => {
+    menu.classList.toggle('ativo');
+    NavMenu.classList.toggle('ativo');
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+  
+.logo{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Zetta", sans-serif;
+    list-style: none;
+    text-decoration: none;
+} 
+
+:root{
+    --rosa:#E32569;
+    --white:#fff;
+    --dark:#1e1c2a;
+}
+
+.negrito{
+    font-weight: 600;
+}
+
+.destaque{
+    color: var(--rosa);
+}
+
+header{
+    height: 62px;
+    margin-bottom: 5rem;
+}
+
+body{ 
+    color: var(--dark);
+    background: var(--white);
+}
+.navigation{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #D980A1;
+    width: 100%;
+    background: #EE8FB2;
+    transition: all 0.5s;
+    position: fixed;
+}
+
+.navigation .logo{
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 150;
+}
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.navigation ul li a{
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 100;
+    transition: all 0.5s;
+}
+.navigation ul li a:hover{
+    color: var(--rosa);
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 2px;
+    border-radius: 3px;
+    background: var(--white);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: var(--white);
+}
+
+
+
+.textoimagem{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7rem;
+
+    display: flex;
+    align-items: center;
+
+    padding:0px 5%;
+
+    justify-content: space-evenly;
+    gap: 3rem;
+
+
+    background-color: #FBFBFB;
+    box-shadow: 0 0.1rem 0.5rem #E1DDDD;
+    border-radius: 10px;
+
+}
+
+.imagem{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.texto{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+    border-left: 3px solid #000;
+
+}   
+
+
+.imagem img{
+    width: 100%;
+}
+
+
+.texto h6{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+}
+
+.texto p{
+    margin-left: 1rem;
+}
+
+
+
+
+.lista-tratamentos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 4px solid #7A7A7A;
+
+}
+
+.menu-tratamentos ul li a{
+    color: #9A9A9A;
+    transition: all 0.5s;
+}
+.menu-tratamentos ul li a:hover{
+    color: var(--rosa);
+}
+
+.item-lista{
+    margin-bottom: 1rem;
+}
+
+.item-lista1{
+    margin-bottom: 1rem;
+    color: var(--rosa);
+}
+
+
+.botox{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 1.5rem;
+
+    display: flex;
+    align-items: center;
+
+    justify-content: space-evenly;
+    gap: 6rem;
+
+    padding: 0px 5%;
+
+    background-color: #FBFBFB;
+    box-shadow: 0 0.1rem 0.5rem #E1DDDD;
+    border-radius: 10px;
+}
+
+.imagemb img{
+    width: 100%;
+
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+
+    max-height: 30rem;
+}
+
+.texto2{
+    max-height: 45rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto2 h6{
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.texto2 p{
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+    max-width: 55rem;
+}
+
+.botao{
+    padding: 2% 2%;
+    background: #EE8FB2;
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.5s;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.botao:hover{
+    background: var(--rosa);
+}
+
+.footer{
+    width: 100%;
+
+    margin-top: 6rem;
+    background: #EE8FB2;
+    box-shadow: 0 0.1rem 0.5rem #D980A1;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+    padding: 1rem 1rem 1rem 1rem;
+
+    color: var(--white);
+    font-weight: 200;
+}
+.footer i {
+    font-size: 2rem;
+}
+.footer p {
+    font-size: 1.1rem;
+}
+.icone_e_texto{
+    display: flex;
+    align-items: center;
+    flex-direction: row; 
+    gap: 5px;
+}
+.lista{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.titulo-baixo{
+    font-size: 1rem;
+    font-family: "Lexend Zetta", sans-serif;
+    font-weight: 400;
+}
+.cep{
+    font-size: 1.3rem;
+}
+.cred{
+    margin-top: 2rem;
+}
+
+@media (max-width:785px) {
+    .navigation{
+        padding: 18px 20px;
+    }
+    .menu{
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1){
+        transform:  translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--white);
+        gap: -10px;
+        transition: 0.3s;
+    }
+    .nav-menu.ativo{
+        right: 0;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    
+    .nav-menu.ativo .nav-item a {
+        color: var(--dark); 
+        font-weight: 400;
+    }
+    .textoimagem{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .lista-tratamentos{
+        font-size: 1rem;
+    }
+
+    .botox{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 3rem;
+    }
+    .botao{
+        margin-left: 25%;
+
+    }
+
+    .footer .lista {
+        transform: scale(0.8);
+    }
+    .footer .cred{
+        transform: scale(0.8);
+    }
+    .footer{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}

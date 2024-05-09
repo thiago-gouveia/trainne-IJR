@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+  
+.logo{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Zetta", sans-serif;
+    list-style: none;
+    text-decoration: none;
+} 
+
+:root{
+    --rosa:#E32569;
+    --white:#fff;
+    --dark:#1e1c2a;
+}
+
+.negrito{
+    font-weight: 600;
+}
+
+.destaque{
+    color: var(--rosa);
+}
+
+header{
+    height: 62px;
+}
+
+body{ 
+    color: var(--dark);
+    background: var(--white);
+}
+.navigation{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #D980A1;
+    width: 100%;
+    background: #EE8FB2;
+    transition: all 0.5s;
+    position: fixed;
+}
+
+.navigation .logo{
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 150;
+}
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.navigation ul li a{
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 100;
+    transition: all 0.5s;
+}
+.navigation ul li a:hover{
+    color: var(--rosa);
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 2px;
+    border-radius: 3px;
+    background: var(--white);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: var(--white);
+}
+
+.tudo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+.esquerda{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.direita{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-right: 5%;
+    margin-top: 2.3rem;
+}
+
+.titulo1{
+    justify-content: space-evenly;
+    margin-left: 5%;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    border-bottom: 3px solid var(--dark);
+
+}
+
+.scroll{
+
+    margin-left: 5%;
+    margin-right: auto;
+
+
+    padding: 1.5%;
+    justify-content: space-evenly;
+    gap: 1rem;
+    max-height: 22rem;
+
+    display: flex;
+    overflow-x: auto;
+
+    border-radius: 15px;
+    background-color: var(--white);
+    box-shadow: inset 0 0 0.5rem #E8E8E8;
+}
+
+.scroll .item{
+    min-width: 20rem;
+
+    text-align: center;
+    background-color: #FFDBE9
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3%;
+    border: 3px solid #FFB7D3;
+    border-radius: 10px;
+}
+
+.dia{
+
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-bottom: 2.5px solid #3E3E3E;
+}
+
+.caixas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 5%;
+    margin-bottom: 5rem;
+}
+
+.caixa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFDBE9;
+    box-shadow:  0 0 0.5rem #FFC5DB;
+    border: 3px solid #FFB7D3;
+    border-radius: 10px;
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 30%;
+}
+
+.num{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.grafico img{
+    width: 100%;
+}
+
+.pizzas{
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+@media (max-width:785px) {
+    .navigation{
+        padding: 18px 20px;
+    }
+    .menu{
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1){
+        transform:  translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--white);
+        gap: -10px;
+        transition: 0.3s;
+    }
+    .nav-menu.ativo{
+        right: 0;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    
+    .nav-menu.ativo .nav-item a {
+        color: var(--dark); 
+        font-weight: 400;
+    }
+
+}

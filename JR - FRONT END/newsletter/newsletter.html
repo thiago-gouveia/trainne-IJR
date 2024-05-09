@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="newsletter.css">
+    <title>teste</title>
+</head>
+<html> 
+<body>
+
+    <header>
+        <nav class="navigation">
+            <a href="#" class="logo">Essence Dermatologia e Estética</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../Home/index_incial.html">Home</a></li>
+                <li class="nav-item"><a href="../botox/botox.html">Tratamentos</a></li>
+                <li class="nav-item"><a href="../Login/login.html">Login</a></li>
+                <li class="nav-item"><a href="../newsletter/newsletter.html">Newsletter</a></li>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div> 
+        </nav>
+    </header>
+    <main>
+        <div class="tudo">
+            <div class="conjunto">
+                <div class="noticia1">
+                    <div class="imagem1"><img src="imagem-equipamentoo.jpg"></div>
+                    <div class="textox1">
+                        <h6 class="titulo-noticia">Novos equipamentos de ponta</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="noticia1">
+                    <div class="textox2">
+                        <h6 class="titulo-noticia">10 dicas para sua sáude de pele</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="imagem2"><img src="imagem-mulher.jpg"></div>
+                </div>
+                <div class="noticia1">
+                    <div class="imagem3"><img src="imagem-produto.jpg"></div>
+                    <div class="textox3">
+                        <h6 class="titulo-noticia">Produtos essenciais para sua pele</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul class="footer">
+            <li class="lista">
+                <h4 class="titulo-baixo">NOSSOS CANAIS</h4>
+                <div class="icone_e_texto">
+                    <i class='bx bxs-phone'></i>
+                    <p>(44)4444-4444</p>
+                </div>
+                <div class="icone_e_texto">
+                    <i class='bx bx-envelope'></i>
+                    <p>ContatoEssence@gmail.com</p>
+                </div>
+            </li>
+            <li class="lista">
+                <h4 class="titulo-baixo">NOSSO ENDEREÇO</h4>
+                <div class="icone_e_texto">
+                    <i class='bx bx-map-alt'></i>
+                    <p>Avenida Presidente XYZ, 444</p>
+                </div>
+                <div class="icone_e_texto">
+                    <h6 class="cep">CEP:</h6>
+                    <p>04445-004</p>
+                </div>
+            </li>
+            <li class="cred">
+                <p>@2024 Essence Dermatologia e Estética</p>
+                <p>Site desenvolvido por grupo7</p>
+            </li>
+        </ul>
+    </footer>
+    <script>
+    const menu = document.querySelector('.menu');
+    const NavMenu = document.querySelector('.nav-menu');
+
+    menu.addEventListener('click', () => {
+    menu.classList.toggle('ativo');
+    NavMenu.classList.toggle('ativo');
+    })
+    </script>
+</body>    
+</html>

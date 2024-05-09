@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+  
+.logo{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Zetta", sans-serif;
+    list-style: none;
+    text-decoration: none;
+} 
+
+:root{
+    --rosa:#E32569;
+    --white:#fff;
+    --dark:#1e1c2a;
+}
+
+.negrito{
+    font-weight: 600;
+}
+
+.destaque{
+    color: var(--rosa);
+}
+
+header{
+    height: 62px;
+    margin-bottom: 5rem;
+}
+
+body{ 
+    color: var(--dark);
+    background: var(--white);
+}
+.navigation{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #D980A1;
+    width: 100%;
+    background: #EE8FB2;
+    transition: all 0.5s;
+    position: fixed;
+}
+
+.navigation .logo{
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 150;
+}
+.navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.navigation ul li a{
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 100;
+    transition: all 0.5s;
+}
+.navigation ul li a:hover{
+    color: var(--rosa);
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 2px;
+    border-radius: 3px;
+    background: var(--white);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: var(--white);
+}
+
+
+.entradas{
+    width: 35%;
+    height: 30rem;
+    margin-left: 32.5%;
+    margin-right: 32.5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 3.5rem;
+
+    background-color: #FF9DC1;
+    box-shadow: 0 0 0.5rem #E1DDDD;
+
+    padding: 2% 2%;
+    border-radius: 0 0 10px 10px;
+}
+
+.input{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.container{
+    width: 80%;
+}
+
+.entryarea{
+    position: relative;
+    height: 20%;
+    line-height: 4rem;
+}
+ 
+input{
+    position: absolute;
+    width: 100%;
+    outline: none;
+    font-size: 1.5em;
+    padding: 0 30px;
+    line-height: 60px;
+    border-radius: 10px;
+    border: 1.5px solid var(--white);
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 1111;
+}
+
+.labelline{
+    position: absolute;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: var(--white);
+    margin: 0 5px;
+    padding: 0 25px;
+    background-color:#FF9DC1 ;
+    transition: 0.2s ease;
+}
+
+input:focus,
+input:valid{
+    color: var(--rosa);
+    border: 4px solid var(--rosa);
+}
+input:focus + .labelline,
+input:valid + .labelline{
+    color: var(--rosa);
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    transform: translate(-15px,-16px) scale(0.88);
+    z-index: 1111;
+}
+
+.btn{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+
+    text-align: center;
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background: #EE8FB2;
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+.btn:hover{
+    background: var(--rosa);
+}
+
+.entradas p{
+    text-align: center;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+}
+
+.mini-logo{
+    color: var(--white);
+
+    text-align: center;
+    font-size: 1rem; 
+    font-weight: 300;
+    font-family: "Lexend Zetta", sans-serif;
+
+}
+
+.titulos{
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.caixa1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #FF9DC1;
+    box-shadow: -0.1rem -0.25rem 0.5rem #EBEAEA;
+    width: 100%;
+    height: 4rem;
+    border-radius: 10px 0 0 0;
+}
+
+.caixa2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color:  #F7C1D6;
+    width: 100%;
+    height: 4rem;
+    border-radius: 0 10px 0 0;
+}
+
+.clientes{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: var(--white);
+}
+
+.colaboradores{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: var(--white);
+    transition: 0.5s;
+}
+
+.colaboradores:hover{
+    color: var(--rosa);
+}
+
+.box-login{
+    margin-bottom: 4rem;
+}
+
+
+@media (max-width:900px) {
+    .navigation{
+        padding: 18px 20px;
+    }
+    .menu{
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1){
+        transform:  translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--white);
+        gap: -10px;
+        transition: 0.3s;
+    }
+    .nav-menu.ativo{
+        right: 0;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    
+    .nav-menu.ativo .nav-item a {
+        color: var(--dark); 
+        font-weight: 400;
+    }
+
+    .entradas{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .titulos{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+.hideEntradas{
+    visibility: hidden;
+}
+
+.showEntradas{
+    visibility: visible;
+}

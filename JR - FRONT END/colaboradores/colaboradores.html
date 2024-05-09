@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="colaboradores.css">
+    <title>teste</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#" class="logo">Essence Dermatologia e Estética</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../Home/index_incial.html">Home</a></li>
+                <li class="nav-item"><a href="../botox/botox.html">Tratamentos</a></li>
+                <li class="nav-item"><a href="../Login/login.html">Login</a></li>
+                <li class="nav-item"><a href="../newsletter/newsletter.html">Newsletter</a></li>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div> 
+        </nav>
+    </header>
+    <main>
+        <div class="tudo">
+            <div class="esquerda">
+                <div class="agendamentos">
+                    <p class="titulo1">Agendamentos</p>
+                    <div class="scroll">
+                        <div class="item">
+                            <p class="dia">SEGUNDA-FEIRA</p>
+                            <p class="negrito">Consultas com Dra.Tânia:</p>
+                            <p>Carla Souza - 10:30</p>
+                            <p>Daniela Lima - 16:30</p>
+                            <p class="negrito">Consultas com Dra.Maria:</p>
+                            <p>Fernanda Costa - 15:30</p>
+                        </div>
+                        <div class="item">
+                            <p class="dia">TERÇA-FEIRA</p>
+                            <p class="negrito">Consultas com Dra.Tânia:</p>
+                            <p>Gabriela Marques - 9:30</p>
+                            <p>Giovana Castro - 11:30</p>
+                            <p class="negrito">Consultas com Dra.Maria:</p>
+                            <p>Marilia Mendes - 17:30</p>
+                        </div>
+                        <div class="item">
+                            <p class="dia">QUARTA-FEIRA</p>
+                            <p class="negrito">Consultas com Dra.Tânia:</p>
+                            <p>Mariana Ferraz - 10:30</p>
+                            <p>Marcela Gomes - 17;:00</p>
+                            <p class="negrito">Consultas com Dra.Maria:</p>
+                            <p>Isabela Benitez - 15:30</p>
+                        </div>
+                        <div class="item">
+                            <p class="dia">QUINTA-FEIRA</p>
+                            <p class="negrito">Consultas com Dra.Tânia:</p>
+                            <p>Tomas Miele - 15:30</p>
+                            <p>Luiza Borges - 18:00</p>
+                            <p class="negrito">Consultas com Dra.Maria:</p>
+                            <p>Isadora Costa - 9:30</p>
+                        </div>
+                        <div class="item">
+                            <p class="dia">SEXTA-FEIRA</p>
+                            <p class="negrito">Consultas com Dra.Tânia:</p>
+                            <p>Tamires Mendes - 10:00</p>
+                            <p>Irene Carvalho - 15:00</p>
+                            <p class="negrito">Consultas com Dra.Maria:</p>
+                            <p>Priscila Coelho - 15:30</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="titulo1">Dados do Mês</p>
+                <div class="caixas">
+                    <div class="caixa">
+                        <p>Clientes Cadastrados:</p>
+                        <p>no Mês:</p>
+                        <p class="num">40</p>
+                    </div>
+                    <div class="caixa">
+                        <p>Consultas Realizadas</p>
+                        <p>no Mês:</p>
+                        <p class="num">27</p>
+                    </div>
+                    <div class="caixa">
+                        <p>Procedimentos </p>
+                        <p> no Mês:</p>
+                        <p class="num">9</p>
+                    </div>
+                </div>
+            </div>
+            <div class="direita">
+                <p class="titulo1">Receita nos Últimos 12 Meses</p>
+                <div class="grafico">
+                    <img src="grafico.png">
+                </div>
+                <p class="titulo1">Estatísticas</p>
+                <div class="pizzas">
+                    <img src="pizza1.png">
+                    <img src="pizza2.png">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+    const menu = document.querySelector('.menu');
+    const NavMenu = document.querySelector('.nav-menu');
+
+    menu.addEventListener('click', () => {
+    menu.classList.toggle('ativo');
+    NavMenu.classList.toggle('ativo');
+    })
+    </script>
+</body>
+</html>

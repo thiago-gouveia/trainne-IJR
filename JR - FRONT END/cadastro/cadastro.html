@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="#" class="logo">Essence Dermatologia e Estética</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../Home/index_incial.html">Home</a></li>
+                <li class="nav-item"><a href="../botox/botox.html">Tratamentos</a></li>
+                <li class="nav-item"><a href="../Login/login.html">Login</a></li>
+                <li class="nav-item"><a href="../newsletter/newsletter.html">Newsletter</a></li>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div> 
+        </nav>
+    </header>
+    <main>
+        <section class="caixa-principal" id="caixaprincipal">
+            <h6 class="mini-logo">Essence Dermatologia e Estética</h6>
+            <div class="colunas">
+                <div class="coluna1">
+                    <div class="input">
+                        <div class="container">
+                            <div class="entryarea">
+                                <input type="text" required>
+                                <div class="labelline">Nome Completo</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div class="container">
+                            <div class="entryarea">
+                                <input type="text" required>
+                                <div class="labelline">Email</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coluna2">
+                    <div class="input">
+                        <div class="container">
+                            <div class="entryarea">
+                                <input type="text" required>
+                                <div class="labelline">Senha</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input">
+                       <div class="container">
+                            <div class="entryarea">
+                                <input type="text" required>
+                                <div class="labelline">Confirme sua Senha</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn" onclick="openPopup(),closeCaixa()">ENTRAR</button>
+        </section>
+        <div class="popup" id="popup">
+            <h2>Obrigado!</h2>
+            <p>Seu cadastro foi realizado com sucesso</p>
+            <a href="../Home/index_incial.html" class="botao">OK</a>
+        </div>
+    </main> 
+
+    <script>
+    let popup = document.getElementById("popup");
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+
+
+    let caixaprincipal = document.getElementById("caixaprincipal");
+    function closeCaixa(){
+        caixaprincipal.classList.add("close-caixa");
+    }
+
+    const menu = document.querySelector('.menu');
+    const NavMenu = document.querySelector('.nav-menu');
+
+    menu.addEventListener('click', () => {
+    menu.classList.toggle('ativo');
+    NavMenu.classList.toggle('ativo');
+    })
+
+    </script>
+ 
+</body>
+</html>

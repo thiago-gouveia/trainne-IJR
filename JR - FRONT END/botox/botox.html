@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="botox.css">
+    <title>teste</title>
+</head>
+<html>
+<body>
+ 
+    <header>
+        <nav class="navigation">
+            <a href="#" class="logo">Essence Dermatologia e Estética</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../Home/index_incial.html">Home</a></li>
+                <li class="nav-item"><a href="../botox/botox.html">Tratamentos</a></li>
+                <li class="nav-item"><a href="../Login/login.html">Login</a></li>
+                <li class="nav-item"><a href="../newsletter/newsletter.html">Newsletter</a></li>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div> 
+        </nav>
+    </header> 
+    <main>
+        <div class="textoimagem">
+            <div class="texto">
+                <h6>Nossos Tratamentos</h6>
+                <p>Entendemos a unicidade de cada pele, por isso personalizamos nosso atendimento, assegurando que cada experiência seja tão única quanto nossos clientes. Nossos especialistas são empenhados em proporcionar um atendimento acolhedor, que respeita sua individualidade e busca a excelência em cada detalhe, para que você se sinta revitalizado, tanto por fora quanto por dentro.</p>
+            </div>
+            <div class="imagem">
+                <img src="imagem_central.jpg">
+            </div>
+        </div> 
+        <div class="menu-tratamentos">
+            <ul class="lista-tratamentos">
+                <li class="item-lista"><a href="../botox/botox.html"><span class="destaque">Botox</span></a></li>
+                <li class="item-lista"><a href="../preenchimento/preenchimento.html">Preenchimento Facial</a></li>
+                <li class="item-lista"><a href="../acne/acne.html">Tratamento de Acne</a></li>
+                <li class="item-lista"><a href="../depilacao/depilacao.html">Depilação à Laser</a></li>
+            </ul>
+        </div>
+        <div class="botox">
+            <div class="texto2">
+                <h6><span class="destaque">Botox</span></h6>
+                <p><span class="negrito">Botox na Essence:</span> Transforme-se com suavidade e precisão. Nosso Botox oferece uma pele mais lisa e rejuvenescida, com um procedimento rápido e resultados impressionantes. Experimente o rejuvenescimento personalizado que enfatiza sua beleza natural.</p>
+                <a href="../LoginNE/loginNE.html" class="botao">Agende sua Consulta</a>
+            </div>
+            <div class="imagemb">
+                <img src="botox.png">
+            </div>
+        </div>
+    </main> 
+    <footer>
+        <ul class="footer">
+            <li class="lista">
+                <h4 class="titulo-baixo">NOSSOS CANAIS</h4>
+                <div class="icone_e_texto">
+                    <i class='bx bxs-phone'></i>
+                    <p>(44)4444-4444</p>
+                </div>
+                <div class="icone_e_texto">
+                    <i class='bx bx-envelope'></i>
+                    <p>ContatoEssence@gmail.com</p>
+                </div>
+            </li>
+            <li class="lista">
+                <h4 class="titulo-baixo">NOSSO ENDEREÇO</h4>
+                <div class="icone_e_texto">
+                    <i class='bx bx-map-alt'></i>
+                    <p>Avenida Presidente XYZ, 444</p>
+                </div>
+                <div class="icone_e_texto">
+                    <h6 class="cep">CEP:</h6>
+                    <p>04445-004</p>
+                </div>
+            </li>
+            <li class="cred">
+                <p>@2024 Essence Dermatologia e Estética</p>
+                <p>Site desenvolvido por grupo7</p>
+            </li>
+        </ul>
+    </footer>
+    <script>
+    const menu = document.querySelector('.menu');
+    const NavMenu = document.querySelector('.nav-menu');
+
+    menu.addEventListener('click', () => {
+    menu.classList.toggle('ativo');
+    NavMenu.classList.toggle('ativo');
+    })
+    </script>
+    
+</body>
+</html>
